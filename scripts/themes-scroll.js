@@ -560,7 +560,7 @@ document.addEventListener("DOMContentLoaded", function () {
       setTimeout(function () {
         loader.style.display = "none";
         satuMomen.style.display = "block"; // Gunakan "block" bukan "inherit"
-      }, 100);
+      }, 3000);
     });
 
     // Jika load event tidak terjadi dalam 5 detik, sembunyikan loader secara paksa
@@ -569,7 +569,7 @@ document.addEventListener("DOMContentLoaded", function () {
         loader.style.display = "none";
         satuMomen.style.display = "block";
       }
-    }, 5000);
+    }, 10000);
   }
 });
 
