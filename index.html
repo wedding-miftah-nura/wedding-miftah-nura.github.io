@@ -883,7 +883,7 @@
 <body style="overflow-y: hidden;">
   <main id="app">
     <div id="modalOverlay" class="modal-backdrop fade" style="display: none;"></div>
-    <div id="loader" class="loader-wrapper" style="display: none;">
+    <div id="loader" class="loader-wrapper">
       <span class="loader">
         <span class="loader-inner"></span>
       </span>
@@ -1603,6 +1603,17 @@
       }
     }
     checkBrowser()
+
+    // window.onload = function() {
+    //   // Show the loader when the page starts loading
+    //   document.getElementById('loader').style.display = 'block';
+
+    //   // Once everything has loaded, hide the loader
+    //   setTimeout(function() {
+    //     document.getElementById('loader').style.display = 'none';
+    //   }, 5000); // Slight delay to ensure smooth transition (optional)
+    // };
+
   </script>
   <!-- end script -->
   <script>
