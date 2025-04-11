@@ -569,7 +569,7 @@ document.addEventListener("DOMContentLoaded", function () {
         loader.style.display = "none";
         satuMomen.style.display = "block";
       }
-    }, 10000);
+    }, 5000);
   }
 });
 
