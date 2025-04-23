@@ -355,7 +355,7 @@ var initMusic = function initMusic() {
       musicPlaying ? widget.play() : widget.pause();
       // Untuk SoundCloud perlu implementasi khusus untuk volume
       if (widget && userInteracted) {
-        widget.setVolume(100);
+        widget.setVolume(70);
       } else if (widget) {
         widget.setVolume(0);
       }
@@ -427,7 +427,7 @@ var initMusic = function initMusic() {
 
     // Juga atur volume SoundCloud jika digunakan
     if (widget && musicPlaying) {
-      widget.setVolume(100);
+      widget.setVolume(70);
     }
 
     // Hapus event listener setelah interaksi pertama
