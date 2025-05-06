@@ -1787,9 +1787,9 @@
 
     // Get the value of a specific query parameter
     let guestNameSlot = url.searchParams.get('guest');
-    guestNameSlot = decodeURIComponent(guestNameSlot);
-    document.getElementById('guestNameSlot').innerText = guestNameSlot ?? '';
-    document.getElementById('guestName').innerText = guestNameSlot ?? '';
+    guestNameSlot = decodeURIComponent(guestNameSlot).replace("&", "<br>&<br>");
+    document.getElementById('guestNameSlot').innerHTML = guestNameSlot ?? '';
+    document.getElementById('guestName').innerHTML = guestNameSlot ?? '';
 
 
     //-----------------------
