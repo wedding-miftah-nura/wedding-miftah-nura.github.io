@@ -905,11 +905,11 @@
                                         <div class="text-center">
                                             <div class="editable mb-1 animate__animated animate__fadeInDown animate__slower"
                                                 data-animation="animate__fadeInDown animate__slower"
-                                                style="color: rgb(255, 255, 255); font-size: 14.4px;">Dear,</div>
+                                                style="color: rgb(255, 255, 255); font-size: 14.4px;">Kepada Yth</div>
                                             <div id="guestNameSlot"
                                                 class="editable color-accent h5 font-weight-bold animate__animated animate__fadeInDown animate__slower mb-2"
                                                 data-animation="animate__fadeInDown animate__slower"
-                                                style="color: rgb(255, 255, 255); font-size: 18px;">guest name</div>
+                                                style="color: rgb(255, 255, 255); font-size: 18px;">Bapak/Ibu/Saudara/i</div>
                                             <div class="editable animate__animated animate__fadeInDown animate__slower"
                                                 data-animation="animate__fadeInDown animate__slower"
                                                 style="color: rgb(255, 255, 255); font-size: 14.4px;">Atas Rahmat dan
@@ -1794,10 +1794,10 @@
     const url = new URL(window.location.href);
 
     // Get the value of a specific query parameter
-    let guestNameSlot = url.searchParams.get('guest');
+    let guestNameSlot = url.searchParams.get('guest') ?? 'Bapak/Ibu/Saudara/i';
     guestNameSlot = decodeURIComponent(guestNameSlot).replace("&", "<br>&<br>");
-    document.getElementById('guestNameSlot').innerHTML = guestNameSlot ?? '';
-    document.getElementById('guestName').innerHTML = guestNameSlot ?? '';
+    document.getElementById('guestNameSlot').innerHTML = guestNameSlot ?? 'Bapak/Ibu/Saudara/i';
+    document.getElementById('guestName').innerHTML = guestNameSlot ?? 'Bapak/Ibu/Saudara/i';
 
 
     //-----------------------
